@@ -1,4 +1,6 @@
-    
+
+module.exports = getDate;
+
 function getDate() {
     let today = new Date();
     let options = {
@@ -11,3 +13,4 @@ function getDate() {
 
     return day;
 }
+
