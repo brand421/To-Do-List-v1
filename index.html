@@ -7,14 +7,12 @@
     <title>To Do List</title>
 </head>
 <body>
-    <h1>It's a weekday!</h1>
-    <p>Why are you not working?</p>
-    <h1>It's a weekday!</h1>
-    <p>Why are you not working?</p>
-    <h1>It's a weekday!</h1>
-    <p>Why are you not working?</p>
-    <h1>It's a weekday!</h1>
-    <p>Why are you not working?</p>
+    
+    <% if (kindOfDay === "Saturday" || kindOfDay === "Sunday") { %>
+        <h1 style="color: darkred"><%= kindOfDay %> To Do List</h1>
+    <% } else { %>
+        <h1 style="color: darkred"><%= kindOfDay %> To Do List</h1>
+     <% } %>
     
 </body>
 </html>
